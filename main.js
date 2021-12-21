@@ -58,8 +58,8 @@ for (const product of products) {
     let divh = document.createElement('div')
     divh.classList.add('tekst')
     let h1 = document.createElement('h1')
-    let h2 = document.createElement('h2')
-    let h3 = document.createElement('h3')
+    let h2 = document.createElement('h1')
+    let h3 = document.createElement('h1')
     h1.innerText = `Назва продукта: ${product.name} `
     h2.innerText = ` Кількість: ${product.many} `
     h3.innerText = `Ціна:${product.price}`
@@ -72,6 +72,7 @@ for (const product of products) {
 
     divh.append(h1,h2,h3)
     divproduct.appendChild(img)
+
     divproduct.appendChild(divh)
     productsContainer.appendChild(divproduct)
 
