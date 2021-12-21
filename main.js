@@ -57,6 +57,7 @@ for (const product of products) {
     divproduct.classList.add('product')
     let divh = document.createElement('div')
     divh.classList.add('tekst')
+
     let h1 = document.createElement('h1')
     let h2 = document.createElement('h1')
     let h3 = document.createElement('h1')
@@ -65,15 +66,18 @@ for (const product of products) {
     h3.innerText = `Ціна:${product.price}`
     let img = document.createElement('img')
     img.src= product.image
-
-
-
-
+let details = document.createElement('a')
+    details.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+    details.innerText = 'details'
 
     divh.append(h1,h2,h3)
+    divproduct.appendChild(details)
+    divproduct.appendChild(divh)
+
     divproduct.appendChild(img)
 
-    divproduct.appendChild(divh)
+
+
     productsContainer.appendChild(divproduct)
 
 
